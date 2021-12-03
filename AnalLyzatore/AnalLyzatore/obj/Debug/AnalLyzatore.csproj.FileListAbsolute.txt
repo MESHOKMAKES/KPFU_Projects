@@ -1,0 +1,10 @@
+C:\Users\Михаил\source\repos\AnalLyzatore\AnalLyzatore\bin\Debug\AnalLyzatore.exe.config
+C:\Users\Михаил\source\repos\AnalLyzatore\AnalLyzatore\bin\Debug\AnalLyzatore.exe
+C:\Users\Михаил\source\repos\AnalLyzatore\AnalLyzatore\bin\Debug\AnalLyzatore.pdb
+C:\Users\Михаил\source\repos\AnalLyzatore\AnalLyzatore\obj\Debug\AnalLyzatore.csprojAssemblyReference.cache
+C:\Users\Михаил\source\repos\AnalLyzatore\AnalLyzatore\obj\Debug\AnalLyzatore.Form1.resources
+C:\Users\Михаил\source\repos\AnalLyzatore\AnalLyzatore\obj\Debug\AnalLyzatore.Properties.Resources.resources
+C:\Users\Михаил\source\repos\AnalLyzatore\AnalLyzatore\obj\Debug\AnalLyzatore.csproj.GenerateResource.cache
+C:\Users\Михаил\source\repos\AnalLyzatore\AnalLyzatore\obj\Debug\AnalLyzatore.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\source\repos\AnalLyzatore\AnalLyzatore\obj\Debug\AnalLyzatore.exe
+C:\Users\Михаил\source\repos\AnalLyzatore\AnalLyzatore\obj\Debug\AnalLyzatore.pdb

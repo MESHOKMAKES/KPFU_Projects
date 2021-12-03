@@ -1,0 +1,10 @@
+C:\Users\Михаил\source\repos\BattleShit3.0\BattleShit3.0\obj\Debug\BattleShit3.0.csprojAssemblyReference.cache
+C:\Users\Михаил\source\repos\BattleShit3.0\BattleShit3.0\obj\Debug\BattleShit3._0.Form1.resources
+C:\Users\Михаил\source\repos\BattleShit3.0\BattleShit3.0\obj\Debug\BattleShit3._0.Properties.Resources.resources
+C:\Users\Михаил\source\repos\BattleShit3.0\BattleShit3.0\obj\Debug\BattleShit3.0.csproj.GenerateResource.cache
+C:\Users\Михаил\source\repos\BattleShit3.0\BattleShit3.0\obj\Debug\BattleShit3.0.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\source\repos\BattleShit3.0\BattleShit3.0\bin\Debug\BattleShit3.0.exe.config
+C:\Users\Михаил\source\repos\BattleShit3.0\BattleShit3.0\bin\Debug\BattleShit3.0.exe
+C:\Users\Михаил\source\repos\BattleShit3.0\BattleShit3.0\bin\Debug\BattleShit3.0.pdb
+C:\Users\Михаил\source\repos\BattleShit3.0\BattleShit3.0\obj\Debug\BattleShit3.0.exe
+C:\Users\Михаил\source\repos\BattleShit3.0\BattleShit3.0\obj\Debug\BattleShit3.0.pdb
