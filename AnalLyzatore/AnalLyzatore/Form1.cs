@@ -118,6 +118,7 @@ namespace AnalLyzatore
             richTextBox3.Text = TopIdenticalWords();
             richTextBox4.Text = UnicWords();
             richTextBox6.Text = TopLongWords();
+            //Easter egg for Nikolaev
         }
 
         private void button2_Click(object sender, EventArgs e) // Delete + 
@@ -183,6 +184,11 @@ namespace AnalLyzatore
         }
 
         private void richTextBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

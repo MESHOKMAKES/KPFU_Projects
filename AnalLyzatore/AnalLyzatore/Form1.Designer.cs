@@ -132,7 +132,7 @@ namespace AnalLyzatore
             // 
             // richTextBox6
             // 
-            this.richTextBox6.Location = new System.Drawing.Point(314, 133);
+            this.richTextBox6.Location = new System.Drawing.Point(316, 133);
             this.richTextBox6.Name = "richTextBox6";
             this.richTextBox6.Size = new System.Drawing.Size(291, 128);
             this.richTextBox6.TabIndex = 11;
@@ -156,6 +156,7 @@ namespace AnalLyzatore
             this.Controls.Add(this.richTextBox1);
             this.Name = "Form1";
             this.Text = "y3oegwpjw5phw5n";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
