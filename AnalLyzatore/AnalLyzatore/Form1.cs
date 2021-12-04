@@ -77,36 +77,24 @@ namespace AnalLyzatore
 
         private string TopIdenticalWords() // Одинаковые слова + 
         {
+            string text = richTextBox1.Text;
+            var delimiterChars = new char[] { ' ', ',', ':', '\t', '\"', '\r', '{', '}', '[', ']', '=', '/', '-' };
+            Dictionary<string, int> help = text
+                .Split(delimiterChars)
+                .Where(x => x.Length > 0) // без данного условия почему то в тексте появляется "" и является самым частом символом 
+                .Select(x => x.ToLower())
+                .GroupBy(x => x)
+                .Select(x => new { Word = x.Key, Count = x.Count() })
+                .OrderByDescending(x => x.Count)
+                .Take(10)
+                .ToDictionary(x => x.Word, x => x.Count);
+            int count = 1;
             string res = "";
-            string text = richTextBox1.Text as string;
-            Regex rx = new Regex(@"\w+", RegexOptions.IgnoreCase);
-            MatchCollection matches = rx.Matches(text);
-            Dictionary<string, int> wordCount = new Dictionary<string, int>();
-            foreach (Match m in matches) //получение словаря слово -> количество повторений
+            foreach(KeyValuePair<string, int> keyValue in help)
             {
-                if (!wordCount.ContainsKey(m.Value.ToLower()))
-                {
-                    wordCount.Add(m.Value.ToLower(), 1);
-                }
-                else
-                {
-                    wordCount[m.Value.ToLower()]++;
-                }
-            }
-            Dictionary<string, int> top10Words = new Dictionary<string, int>();
-            while (top10Words.Count != wordCount.Count && top10Words.Count < 10)
-            {
-                int max = 0; string word = "";
-                foreach (string key in wordCount.Keys)
-                {
-                    if (max < wordCount[key] && !top10Words.ContainsKey(key))
-                    {
-                        max = wordCount[key];
-                        word = key;
-                        res += word + ": " + wordCount[key] + "\n";
-                    }
-                }
-                top10Words.Add(word, max);
+                if (count <= 9)
+                    res += keyValue.Key + ": " + keyValue.Value + "\n";
+                count++;
             }
             return res;
         }
@@ -119,6 +107,7 @@ namespace AnalLyzatore
             richTextBox4.Text = UnicWords();
             richTextBox6.Text = TopLongWords();
             //Easter egg for Nikolaev
+            //
         }
 
         private void button2_Click(object sender, EventArgs e) // Delete + 
