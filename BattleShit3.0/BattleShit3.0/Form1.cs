@@ -29,7 +29,7 @@ namespace BattleShit3._0
         public int allCountShips = 20;
         List<Ship> shipsPlayer;
         Animation animation = new Animation();
-        public PictureBox picture = new PictureBox();
+        //public PictureBox picture = new PictureBox();
         public Form1()
         {
             InitializeComponent();
@@ -44,7 +44,7 @@ namespace BattleShit3._0
             
             bot = new Bot(enemyMap, myMap, enemyButtons, myButtons, shipsPlayer);
             enemyMap = bot.ConfigureBotsShips();
-            picture.Size = new Size(30, 30);
+            //picture.Size = new Size(30, 30);
 
         }
 
@@ -121,10 +121,10 @@ namespace BattleShit3._0
                 checkedListBox2.Items.Add(words2[i]);
             checkedListBox2.SelectionMode = SelectionMode.One;
             this.Controls.Add(checkedListBox2);
-            picture.Location = new Point(400, mapSize * cellSize + 20);
-            picture.SizeMode = PictureBoxSizeMode.StretchImage;
-            picture.BackColor = Color.White;
-            this.Controls.Add(picture);
+            //picture.Location = new Point(400, mapSize * cellSize + 20);
+            //picture.SizeMode = PictureBoxSizeMode.StretchImage;
+            //picture.BackColor = Color.White;
+            //this.Controls.Add(picture);
 
 
             countShips1.Add(4, 1);
@@ -344,6 +344,14 @@ namespace BattleShit3._0
            
                 if (allCountShips == 0)
                 {
+                    for (int i = 0; i < mapSize; i++)
+                    {
+                        for (int j = 0; j < mapSize; j++)
+                        {
+                            enemyButtons[i, j].Enabled = false;
+                            myButtons[i, j].Enabled = false;
+                        }
+                    }
                     MessageBox.Show("Вы выиграли!");
                 }
             }

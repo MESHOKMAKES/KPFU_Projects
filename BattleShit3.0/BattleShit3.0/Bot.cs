@@ -80,7 +80,7 @@ namespace BattleShit3._0
                                     point.point.X = posX;
                                     point.point.Y = posY + k;
                                     ship.AddPoint(point);
-                                    myButtons[posX, posY + k].BackColor = Color.Red;
+                                    //myButtons[posX, posY + k].BackColor = Color.Red;
                                     myMap[posX, posY + k] = 1;
                                     k++;
                                 }
@@ -117,7 +117,7 @@ namespace BattleShit3._0
                                     MyPoint point = new MyPoint();
                                     point.point.X = posX + k;
                                     point.point.Y = posY;
-                                    myButtons[posX + k, posY].BackColor = Color.Red;
+                                    //myButtons[posX + k, posY].BackColor = Color.Red;
                                     myMap[posX + k, posY] = 1;
                                     k++;
                                     ship.AddPoint(point);
@@ -199,6 +199,14 @@ namespace BattleShit3._0
             }
             if (allCountShips == 0)
             {
+                for (int i = 0; i < Form1.mapSize; i++)
+                {
+                    for (int j = 0; j < Form1.mapSize; j++)
+                    {
+                        enemyButtons[i, j].Enabled = false;
+                        myButtons[i, j].Enabled = false;
+                    }
+                }
                 MessageBox.Show("Победа Бота!");
             }
             return hit;

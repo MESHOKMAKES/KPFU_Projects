@@ -14,7 +14,8 @@ namespace BattleShit3._0
         public List<Image> frames = new List<Image>();
         public Animation()
         {
-            string path = @"C:\Users\Михаил\source\repos\BattleShit3.0\BattleShit3.0\bin\Debug\Animation\";
+            //C:\Users\Михаил\source\repos\KPFU_Projects\BattleShit3.0\BattleShit3.0\bin\Debug\Animation
+            string path = @"C:\Users\Михаил\source\repos\KPFU_Projects\BattleShit3.0\BattleShit3.0\bin\Debug\Animation\";
             for (int i = 1; i < 5; i++)
             {
                 string imgPath = path + i.ToString() + ".jpg";
